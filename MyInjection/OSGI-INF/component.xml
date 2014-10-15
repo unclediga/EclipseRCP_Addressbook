@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="MyServiceDSConsumer">
+   <implementation class="myinjection.MyServiceDSConsumer"/>
+   <reference bind="setSrv" cardinality="1..1" interface="myinjection.service.MyServiceDS" name="service.DS" policy="static" unbind="unsetSrv"/>
+</scr:component>

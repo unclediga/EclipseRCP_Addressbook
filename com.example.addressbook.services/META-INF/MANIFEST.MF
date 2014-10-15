@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Address Book Services
+Bundle-SymbolicName: com.example.addressbook.services
+Bundle-Version: 1.0.0
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: Ralf Ebert
+Bundle-Activator: com.example.addressbook.services.internal.Activator
+Import-Package: com.example.addressbook.entities,
+ com.example.addressbook.services,
+ de.ralfebert.rcputils.random,
+ org.osgi.framework;version="1.5.0"
+Service-Component:  OSGi-INF/component.xml
+Require-Bundle: org.eclipse.osgi.services;bundle-version="3.4.0",
+ org.eclipse.equinox.ds;bundle-version="1.4.200",
+ org.eclipse.equinox.util;bundle-version="1.0.500"
